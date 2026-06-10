@@ -1,0 +1,98 @@
+% Document Class (DO NOT DELETE)
+\documentclass{exam}
+
+% Packages
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{framed}
+\usepackage{csquotes}
+\usepackage{listings}
+\usepackage{url}
+
+% Code Style
+\definecolor{codegray}{gray}{0.95}
+\definecolor{codegreen}{rgb}{0,0.5,0}
+\definecolor{codeblue}{rgb}{0,0,0.6}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{codegray},
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{codeblue}\bfseries,
+    numberstyle=\tiny\color{gray},
+    stringstyle=\color{red},
+    basicstyle=\ttfamily\small,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4
+}
+
+\lstset{style=mystyle}
+
+% Headers and Footers
+\fancyhf{}
+\fancyhead[L]{Project 1} % Change to  assignment  name
+\fancyhead[R]{Mrs. Ramsey-Rutledge} % Change to your name
+\fancyfoot[R]{Page~\thepage~of~\pageref{LastPage}}
+\cfoot{}
+
+% Command for inputting solutions
+\newcommand{\mysol}[1]{\begin{solution} #1 \end{solution}}
+\setlength{\parindent}{0pt}
+\printanswers % Delete if you want to make this double as the answer key
+
+
+
+% Title 
+\title{Project 1}
+\author{Mrs. Ramsey-Rutledge} % Change to your name
+\date{August 2026}
+
+\begin{document}
+\pagestyle{fancy}
+
+\maketitle
+
+\section{Instructions}
+\noindent Add more detail about what this question entails here. 
+
+\begin{solution}
+    Here is where you can put in an overview of how you accomplished this and include a key code snippet. 
+\begin{lstlisting}[language=C++]
+// Here is my code
+int main() {
+    return 0;
+}
+\end{lstlisting}
+Additionally, include any pictures, drawings, or graphics. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{example.png}
+    \caption{This is an empty square until you upload an image with the same name}
+\end{figure}
+\end{solution}
+
+\section{Another Question}
+\begin{solution}
+    
+\end{solution}
+
+\section{Final Question}
+\begin{solution}
+    
+\end{solution}
+
+\section{Include a link to your code}
+My code is on github at \url{https://github.com/jramsey-rutledge}
+
+\end{document}
